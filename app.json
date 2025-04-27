@@ -1,4 +1,5 @@
 {
   "name": "TextEditorExample",
-  "displayName": "TextEditorExample"
+  "displayName": "TextEditorExample",
+  "newArchEnabled": false
 }

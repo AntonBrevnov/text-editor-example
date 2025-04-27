@@ -1,3 +1,33 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": false,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@features/*": ["./src/features/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "**/__generated__/"]
+
 }
